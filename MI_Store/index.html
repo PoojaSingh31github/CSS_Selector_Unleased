@@ -3,245 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Store</title>
+    <title>Custom MI Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
-      <div style="display: flex">
-        <div class="logo">
-          <img src="mi-logo.png" alt="Mi Logo" />
+      <div class="menuLeft">
+        <div class="navbar__logo">
+          <img
+            class="navHomeIcon1"
+            src="https://img.icons8.com/?size=100&id=1iF9PyJ2Thzo&format=png&color=ffffff"
+            alt=""
+          />
+          <img class="navHomeIcon2" src="Xiaomi_logo.png" alt="" />
         </div>
-        <ul class="nav-links">
-          <li><a href="#">Store</a></li>
-          <li><a href="#">Phone</a></li>
-          <li><a href="#">TV & Smart Home</a></li>
-          <li><a href="#">Tablet</a></li>
-          <li><a href="#">Lifestyle</a></li>
+        <ul class="navbar__links">
+          <li><a class="link" href="#">Store</a></li>
+          <li><a class="link" href="#">Phones</a></li>
+          <li><a class="link" href="#">Tablets</a></li>
+          <li><a class="link" href="#">TV & Smart Home</a></li>
+          <li><a class="link" href="#">Smart Watch & Audio</a></li>
         </ul>
       </div>
-      <div class="nav-icons">
-        <a href="#">Discover</a>
-        <a href="#">Support</a>
-        <a href="#"><img src="cart-icon.png" alt="Cart" /></a>
+      <div class="menuRight">
+        <ul class="navbar__links" style="gap: 20px">
+          <li><a class="link" href="#">Discover</a></li>
+          <li><a class="link" href="#">Support</a></li>
+          <li>
+            <a class="link" href="#">
+              <img
+                class="navIcons"
+                src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="https://img.icons8.com/?size=100&id=bsZaYrh2dJcU&format=png&color=000000"
+                alt=""
+                class="navIcons"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="link" href="#">
+              <img
+                src="https://img.icons8.com/?size=100&id=114064&format=png&color=000000"
+                alt=""
+                class="navIcons"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
 
-    <!-- main session -->
-    <main class="container">
-      <section class="product-section">
-        <div class="product-card">
-          <h3>Redmi Earphones</h3>
-          <p class="discount">25% off</p>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobileClose">
+        <img
+          src="https://img.icons8.com/?size=100&id=8112&format=png&color=ffffff"
+          alt=""
+        />
+      </div>
+      <ul class="mobile-menu__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
 
-          <div
-            style="
-              display: flex;
-              justify-content: space-around;
-              margin-top: 20px;
-            "
-          >
-            <div>
-              <h6 style="margin-top: 10px">from</h6>
-              <p class="price" style="font-weight: 600">₹449</p>
-              <p class="line_troght">₹599</p>
-            </div>
-            <div style="height: 30px">
-              <img
-                class="product_img"
-                src="https://i03.appmifile.com/747_item_in/05/12/2023/8d958f75f32765d65fde703ce66468dd.jpg?thumb=1&w=120&f=webp&q=85"
-                alt="Redmi Earphones"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <h3>Redmi Earphones</h3>
-          <p class="discount">25% off</p>
+    <div class="mainContainer">
+      <div class="gridContainer" id="gridContainer"></div>
+      <div class="bannerImage">
+        <img
+          src="https://i03.appmifile.com/305_operator_in/16/09/2024/7a490ec96922082e7e31cdca20dd12d3.jpg?thumb=1&w=1680&f=webp&q=85"
+          alt=""
+        />
+      </div>
+      <div class="gridContainer" id="gridContainer2"></div>
+    </div>
 
-          <div
-            style="
-              display: flex;
-              justify-content: space-around;
-              margin-top: 20px;
-            "
-          >
-            <div>
-              <h6 style="margin-top: 10px">from</h6>
-              <p class="price" style="font-weight: 600">₹449</p>
-              <p class="line_troght">₹599</p>
-            </div>
-            <div style="height: 30px">
-              <img
-                class="product_img"
-                src="https://i03.appmifile.com/747_item_in/05/12/2023/8d958f75f32765d65fde703ce66468dd.jpg?thumb=1&w=120&f=webp&q=85"
-                alt="Redmi Earphones"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <h3>Redmi Earphones</h3>
-          <p class="discount">25% off</p>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeButton = document.getElementsByClassName("mobileClose")[0];
+      const gridContainer = document.getElementById("gridContainer");
+      const gridContainer2 = document.getElementById("gridContainer2");
 
-          <div
-            style="
-              display: flex;
-              justify-content: space-around;
-              margin-top: 20px;
-            "
-          >
-            <div>
-              <h6 style="margin-top: 10px">from</h6>
-              <p class="price" style="font-weight: 600">₹449</p>
-              <p class="line_troght">₹599</p>
-            </div>
-            <div style="height: 30px">
-              <img
-                class="product_img"
-                src="https://i03.appmifile.com/747_item_in/05/12/2023/8d958f75f32765d65fde703ce66468dd.jpg?thumb=1&w=120&f=webp&q=85"
-                alt="Redmi Earphones"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <h3>Redmi Earphones</h3>
-          <p class="discount">25% off</p>
+      closeButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("open");
+      });
 
-          <div
-            style="
-              display: flex;
-              justify-content: space-around;
-              margin-top: 20px;
-            "
-          >
-            <div>
-              <h6 style="margin-top: 10px">from</h6>
-              <p class="price" style="font-weight: 600">₹449</p>
-              <p class="line_troght">₹599</p>
-            </div>
-            <div style="height: 30px">
-              <img
-                class="product_img"
-                src="https://i03.appmifile.com/747_item_in/05/12/2023/8d958f75f32765d65fde703ce66468dd.jpg?thumb=1&w=120&f=webp&q=85"
-                alt="Redmi Earphones"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("open");
+      });
 
-      <section class="banner-section">
-        <div class="banner">
-          <h2>Save Up to 65% On Chargers & Cables</h2>
-          <p>Free Delivery on All Products</p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-      </section>
+      for (let i = 0; i < 3; i++) {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.setAttribute("role", "button");
+        card.setAttribute("tabindex", "0");
 
-      <section class="product-section">
-        <div class="product-card">
-          <h3>Redmi Earphones</h3>
-          <p class="discount">25% off</p>
+        card.innerHTML = `
+            <div class="product-info">
+                <div class="product-title">
+                <a href="https://www.mi.com/in/product/xiaomi-pad-6/">Xiaomi Pad 6</a>
+                </div>
+                <div class="product-tag">
+                <span>37% off</span>
+                </div>
+            </div>
+            <div class="product-image">
+                <div class="product-price">
+                <span>From </span><strong>₹24,999</strong><br /><del>₹39,999</del>
+                </div>
+                <img
+                src="//i03.appmifile.com/61_item_in/24/08/2023/89bec9fe6f28937438b4646f395bf4cb.jpg?thumb=1&amp;w=200&amp;q=85"
+                alt="Xiaomi Pad 6"
+                loading="lazy"
+                />
+            </div>
+        `;
 
-          <div
-            style="
-              display: flex;
-              justify-content: space-around;
-              margin-top: 20px;
-            "
-          >
-            <div>
-              <h6 style="margin-top: 10px">from</h6>
-              <p class="price" style="font-weight: 600">₹449</p>
-              <p class="line_troght">₹599</p>
-            </div>
-            <div style="height: 30px">
-              <img
-                class="product_img"
-                src="https://i03.appmifile.com/747_item_in/05/12/2023/8d958f75f32765d65fde703ce66468dd.jpg?thumb=1&w=120&f=webp&q=85"
-                alt="Redmi Earphones"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <h3>Redmi Earphones</h3>
-          <p class="discount">25% off</p>
+        gridContainer.appendChild(card);
+      }
 
-          <div
-            style="
-              display: flex;
-              justify-content: space-around;
-              margin-top: 20px;
-            "
-          >
-            <div>
-              <h6 style="margin-top: 10px">from</h6>
-              <p class="price" style="font-weight: 600">₹449</p>
-              <p class="line_troght">₹599</p>
-            </div>
-            <div style="height: 30px">
-              <img
-                class="product_img"
-                src="https://i03.appmifile.com/747_item_in/05/12/2023/8d958f75f32765d65fde703ce66468dd.jpg?thumb=1&w=120&f=webp&q=85"
-                alt="Redmi Earphones"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <h3>Redmi Earphones</h3>
-          <p class="discount">25% off</p>
+      for (let i = 0; i < 3; i++) {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.setAttribute("role", "button");
+        card.setAttribute("tabindex", "0");
 
-          <div
-            style="
-              display: flex;
-              justify-content: space-around;
-              margin-top: 20px;
-            "
-          >
-            <div>
-              <h6 style="margin-top: 10px">from</h6>
-              <p class="price" style="font-weight: 600">₹449</p>
-              <p class="line_troght">₹599</p>
+        card.innerHTML = `
+            <div class="product-info">
+                <div class="product-title">
+                <a href="https://www.mi.com/in/product/xiaomi-pad-6/">Xiaomi Pad 6</a>
+                </div>
+                <div class="product-tag">
+                <span>37% off</span>
+                </div>
             </div>
-            <div style="height: 30px">
-              <img
-                class="product_img"
-                src="https://i03.appmifile.com/747_item_in/05/12/2023/8d958f75f32765d65fde703ce66468dd.jpg?thumb=1&w=120&f=webp&q=85"
-                alt="Redmi Earphones"
-              />
+            <div class="product-image">
+                <div class="product-price">
+                <span>From </span><strong>₹24,999</strong><br /><del>₹39,999</del>
+                </div>
+                <img
+                src="//i03.appmifile.com/61_item_in/24/08/2023/89bec9fe6f28937438b4646f395bf4cb.jpg?thumb=1&amp;w=200&amp;q=85"
+                alt="Xiaomi Pad 6"
+                loading="lazy"
+                />
             </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <h3>Redmi Earphones</h3>
-          <p class="discount">25% off</p>
+        `;
 
-          <div
-            style="
-              display: flex;
-              justify-content: space-around;
-              margin-top: 20px;
-            "
-          >
-            <div>
-              <h6 style="margin-top: 10px">from</h6>
-              <p class="price" style="font-weight: 600">₹449</p>
-              <p class="line_troght">₹599</p>
-            </div>
-            <div style="height: 30px">
-              <img
-                class="product_img"
-                src="https://i03.appmifile.com/747_item_in/05/12/2023/8d958f75f32765d65fde703ce66468dd.jpg?thumb=1&w=120&f=webp&q=85"
-                alt="Redmi Earphones"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+        gridContainer2.appendChild(card);
+      }
+    </script>
   </body>
 </html>
